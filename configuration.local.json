@@ -1,1 +1,60 @@
+{
+  "App": {
+    "EnablePolling": true,
+    "PollingIntervalSeconds": 86400,
+    "CheckForUpdates": true
+  },
 
+  "Format": {
+    "Fit": true,
+    "Json": false,
+    "Tcx": false,
+    "SaveLocalCopy": true,
+    "IncludeTimeInHRZones": true,
+    "IncludeTimeInPowerZones": true,
+    "StackedWorkouts": {
+      "AutomaticallyStackWorkouts": false,
+      "MaxAllowedGapSeconds": 300
+    }
+  },
+
+  "Peloton": {
+    "Email": "",
+    "Password": "",
+    "NumWorkoutsToDownload": 10,
+    "ExcludeWorkoutTypes": [ ]
+  },
+
+  "Garmin": {
+    "Email": "",
+    "Password": "",
+    "TwoStepVerificationEnabled": false,
+    "Upload": false,
+    "FormatToUpload": "fit"
+  },
+
+  "Observability": {
+
+    "Prometheus": {
+      "Enabled": false,
+      "Port": 4000
+    },
+
+    "Jaeger": {
+      "Enabled": false,
+      "AgentHost": "localhost",
+      "AgentPort": 6831
+    },
+
+    "Serilog": {
+      "Using": [ "Serilog.Sinks.Console", "Serilog.Sinks.File" ],
+      "MinimumLevel": {
+        "Default": "Information",
+        "Override": {
+          "Microsoft": "Error",
+          "System": "Error"
+        }
+      }
+    }
+  }
+}
