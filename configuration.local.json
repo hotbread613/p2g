@@ -1,7 +1,7 @@
 {
   "App": {
     "EnablePolling": true,
-    "PollingIntervalSeconds": 86400,
+    "PollingIntervalSeconds": 21600,
     "CheckForUpdates": true
   },
 
@@ -59,4 +59,5 @@
   }
 
 }
+
 
