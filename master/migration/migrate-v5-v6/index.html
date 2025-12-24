@@ -12,13 +12,9 @@
         <meta name="author" content="philosowaffle">
       
       
-        <link rel="canonical" href="https://philosowaffle.github.io/peloton-to-garmin/master/install/docker-headless/">
+        <link rel="canonical" href="https://philosowaffle.github.io/peloton-to-garmin/master/migration/migrate-v5-v6/">
       
       
-        <link rel="prev" href="../docker-webui/">
-      
-      
-        <link rel="next" href="../windows/">
       
       
         
@@ -29,7 +25,7 @@
     
     
       
-        <title>Headless - Peloton To Garmin</title>
+        <title>Migrating from V5 to V6 - Peloton To Garmin</title>
       
     
     
@@ -78,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-headless" class="md-skip">
+        <a href="#migrating-from-v5-to-v6" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Headless
+              Migrating from V5 to V6
             
           </span>
         </div>
@@ -236,13 +232,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../install/" class="md-tabs__link">
           
   
   
@@ -402,8 +396,6 @@
       
   
   
-    
-  
   
   
     
@@ -425,21 +417,18 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../install/" class="md-nav__link ">
               
   
   
@@ -457,13 +446,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -480,10 +469,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -500,11 +487,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -525,7 +512,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -543,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../install/docker/" class="md-nav__link">
         
   
   
@@ -571,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker-webui/" class="md-nav__link">
+      <a href="../../install/docker-webui/" class="md-nav__link">
         
   
   
@@ -596,37 +583,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Headless
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../install/docker-headless/" class="md-nav__link">
         
   
   
@@ -642,76 +602,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#docker-compose" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        docker-compose
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="docker-compose">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#to-stop-p2g" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To stop P2G
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-update-p2g" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        To update P2G
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prometheus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prometheus
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -732,7 +622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows/" class="md-nav__link">
+      <a href="../../install/windows/" class="md-nav__link">
         
   
   
@@ -760,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../source/" class="md-nav__link">
+      <a href="../../install/source/" class="md-nav__link">
         
   
   
@@ -788,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../github-action/" class="md-nav__link">
+      <a href="../../install/github-action/" class="md-nav__link">
         
   
   
@@ -1375,7 +1265,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../migration/migrations/" class="md-nav__link">
+      <a href="../migrations/" class="md-nav__link">
         
   
   
@@ -1458,22 +1348,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker-compose" class="md-nav__link">
+  <a href="#breaking-changes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        docker-compose
+        Breaking Changes
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="docker-compose">
+    <nav class="md-nav" aria-label="Breaking Changes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#to-stop-p2g" class="md-nav__link">
+  <a href="#sessionid-removed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        To stop P2G
+        SessionId Removed
       
     </span>
   </a>
@@ -1481,10 +1371,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#to-update-p2g" class="md-nav__link">
+  <a href="#new-peloton-authentication" class="md-nav__link">
     <span class="md-ellipsis">
       
-        To update P2G
+        New Peloton Authentication
       
     </span>
   </a>
@@ -1493,17 +1383,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prometheus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Prometheus
-      
-    </span>
-  </a>
   
 </li>
       
@@ -1525,64 +1404,6 @@
   
 
 
-  <nav class="md-path" aria-label="Navigation" >
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Home
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Install
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../docker/" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Docker
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
               
               <article class="md-content__inner md-typeset">
                 
@@ -1593,52 +1414,46 @@
   
 
 
-<h1 id="docker-headless">Docker Headless</h1>
-<p>This flavor of P2G runs without any user interface and relies on configuration from <code>configuration.local.json</code> file.</p>
-<div class="admonition info">
-<p class="admonition-title"><a href="https://hub.docker.com/r/philosowaffle/peloton-to-garmin">DockerHub</a></p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-i<span class="w"> </span>-v<span class="w"> </span>/full/path/to/configuration.local.json:/app/configuration.local.json<span class="w"> </span>-v<span class="w"> </span>/full/path/to/output:/app/output<span class="w"> </span>philosowaffle/peloton-to-garmin:stable
-</code></pre></div>
-</div>
-<div class="admonition info">
-<p class="admonition-title"><a href="https://github.com/philosowaffle/peloton-to-garmin/pkgs/container/peloton-to-garmin">GitHub Package</a></p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-i<span class="w"> </span>-v<span class="w"> </span>/full/path/to/configuration.local.json:/app/configuration.local.json<span class="w"> </span>-v<span class="w"> </span>/full/path/to/output:/app/output<span class="w"> </span>ghcr.io/philosowaffle/peloton-to-garmin:stable
-</code></pre></div>
-</div>
-<h2 id="docker-compose">docker-compose</h2>
-<p><em>Pre-requisite:</em> You have either <code>docker-compose</code> or <code>Docker Desktop</code> installed
-<em>This method does not work with Garmin accounts protected by Two Step Verification</em></p>
-<ol>
-<li>Create a directory <code>p2g-headless</code><ol>
-<li>Inside this folder create a <a href="https://github.com/philosowaffle/peloton-to-garmin/blob/master/docker/headless/docker-compose.yaml">docker-compose.yaml</a> file in the directory</li>
-<li>Within this same directory, also create a folder called <code>config</code><ol>
-<li>Inside the <code>config</code> folder create the <a href="https://github.com/philosowaffle/peloton-to-garmin/blob/master/configuration.example.json">configuration.local.json</a>.</li>
-</ol>
-</li>
-<li>Edit the configuration file to use your Peloton and Garmin credentials</li>
-</ol>
-</li>
-<li>Open a terminal in this folder</li>
-<li>Run: <code>docker-compose pull &amp;&amp; docker-compose up -d</code></li>
-</ol>
-<p>Any logs or generated files will be available in the <code>output</code> directory.  Additionally, you can learn more about customizing your configuration over in the <a href="../../configuration/">Configuration Section</a></p>
-<h3 id="to-stop-p2g">To stop P2G</h3>
-<ol>
-<li>You can use Docker Desktop application to kill the containers</li>
-<li>Or, you can open a terminal in the <code>p2g-headless</code> folder<ol>
-<li>Run: <code>docker-compose down</code></li>
-</ol>
-</li>
-</ol>
-<h3 id="to-update-p2g">To update P2G</h3>
-<ol>
-<li>Open a terminal in the <code>p2g-headless</code> folder<ol>
-<li>Run: <code>docker-compose pull &amp;&amp; docker-compose up -d</code></li>
-</ol>
-</li>
-</ol>
-<h2 id="prometheus">Prometheus</h2>
-<p>If you configure P2G to serve Prometheus metrics then you will also need to map the corresponding port for your docker container. By default, Prometheus metrics will be served on port <code>4000</code>. You can learn more about P2G and Prometheus in the <a href="../../configuration/">Observability Configuration</a> section.</p>
+<h1 id="migrating-from-v5-to-v6">Migrating from V5 to V6</h1>
+<p>Version 6 introduces a new way of authenticating with Peloton and removes a few different capabilities that were added while investigating solutions.</p>
+<p>First, identify your <a href="../../install/#-start-here-to-explore-install-options">install method</a>.  Then, use the table below to determine if you need to take any special action.  A ✔️ means there is something for you to do.  Follow the hyperlink to see what steps to take.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Breaking Change</th>
+<th style="text-align: left;">Build From Source</th>
+<th style="text-align: left;">Docker Headless</th>
+<th style="text-align: left;">Docker WebUI</th>
+<th style="text-align: left;">GitHubAction</th>
+<th style="text-align: left;">Windows Exe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="#sessionid-removed">SessionId Removed</a></td>
+<td style="text-align: left;">✔️</td>
+<td style="text-align: left;">✔️</td>
+<td style="text-align: left;">✔️</td>
+<td style="text-align: left;">✔️</td>
+<td style="text-align: left;">✔️</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#new-peloton-authentication">New Peloton Authentication</a></td>
+<td style="text-align: left;">✔️</td>
+<td style="text-align: left;">✔️</td>
+<td style="text-align: left;">✔️</td>
+<td style="text-align: left;">❌</td>
+<td style="text-align: left;">✔️</td>
+</tr>
+</tbody>
+</table>
+<h2 id="breaking-changes">Breaking Changes</h2>
+<h3 id="sessionid-removed">SessionId Removed</h3>
+<p>While investigating a solution for the <a href="https://github.com/philosowaffle/peloton-to-garmin/issues/795">Peloton Auth Errors</a> a temporary solution was introduced that allowed  you to <a href="https://philosowaffle.github.io/peloton-to-garmin/v5.1.0/configuration/peloton/#peloton-session-id">authenticate via SessionId</a>.  This option stopped working somewhere along the way and is officially removed in v6.</p>
+<p>If you edited your configuration or settings to specify SessionId, you may delete it entirely.</p>
+<h3 id="new-peloton-authentication">New Peloton Authentication</h3>
+<p>Some users have reported needing to delete their <code>data/</code> directory before this new authentication scheme would work.  I'm not exactly sure why that is, it wasn't intentional, but worth noting.  This is inconvenient as it will require you to re-configure all of your settings again after the fact.  So if possible, see if P2G works first without deleting anything, if not, then try deleting the <code>data/</code> directory.</p>
+<p>To locate your configuration/settings/data start <a href="../../configuration/">here</a>.</p>
 
 
 
